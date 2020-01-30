@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import {RouterModule,Routes} from '@angular/router';
 import { HomeComponent} from './home/home.component';
 import { TeamComponent} from './team/team.component';
+import { IplService } from './ipl.service';
 const routes:Routes = [
   {
     path:"home",
@@ -24,6 +25,7 @@ const routes:Routes = [
   FormsModule ,
   RouterModule.forRoot(routes) ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, HomeComponent, TeamComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [IplService]
 })
 export class AppModule { }
