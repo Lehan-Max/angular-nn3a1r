@@ -11,6 +11,7 @@ import { TeamComponent } from './team/team.component';
 import { IplService } from './ipl.service';
 import {HttpClientModule} from '@angular/common/http';
 import {} from 'ng2-google-charts';
+
 const rooutes:Routes=[
 {
   path:"",
