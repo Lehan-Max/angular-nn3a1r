@@ -1,3 +1,24 @@
-<p>
-team works!
-</p>
+<div class="row md-4">
+  <div class="col md-4">
+    <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Team</th>
+      <th scope="col">AKA</th>
+      <th scope="col">City</th>
+      <th scope="col">Coach</th>
+      <th scope="col">Home Ground</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let team of teams">
+      <th scope="row">{{team["team"]}}</th>
+      <td>{{team["label"]}}</td>
+      <td>{{team["city"]}}</td>
+      <td>{{team["coach"]}}</td>
+      <td>{{team["home"]}}</td>
+    </tr>
+  </tbody>
+</table>
+  </div>
+</div>
