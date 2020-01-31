@@ -11,6 +11,9 @@ import { TeamComponent } from './team/team.component';
 import { IplService } from './ipl.service';
 import {HttpClientModule} from '@angular/common/http';
 import {} from 'ng2-google-charts';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatSelectModule} from '@angular/material';
+
 
 const rooutes:Routes=[
 {
@@ -31,7 +34,9 @@ component:TeamComponent
   imports:      [ BrowserModule, FormsModule ,
   HttpClientModule,
 
-  RouterModule.forRoot(rooutes)
+  RouterModule.forRoot(rooutes),
+  BrowserAnimationsModule,
+  MatSelectModule
   
   ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent, HomeComponent, TeamComponent ],

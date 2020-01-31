@@ -1,10 +1,12 @@
 <div class="row mt-3">
   <div class="col md-8">
     <h1>{{message}}</h1>
-    <select class="form-control" (change)="getPlayerOfTeam($event)">
-      <option value="" disabled>Select Team</option>
-      <option *ngFor="let team of teamNames">{{team}}</option>
-    </select>  
+    <mat-form-field>
+    <mat-select placeholder="Select the Team" (selectionChange)="getPlayerOfTeam($event)">
+      <mat-option value="" disabled>Select Team</mat-option>
+      <mat-option *ngFor="let team of teamNames">{{team}}</mat-option>
+    </mat-select> 
+    </mat-form-field> 
     </div>
     <div class="col md-8">
     </div>
