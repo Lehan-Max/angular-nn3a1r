@@ -1,3 +1,4 @@
+  
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,8 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent  {
   name = 'Angular';
-  message = 'WELCOME TO ANGULAR'
-  clickMe(){
-    alert("Bootstap working");
-  }
+  message='Welcome to Angular CLI!';
 }
